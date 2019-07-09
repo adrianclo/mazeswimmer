@@ -1,2 +1,2 @@
-# watermaze
+# watermazer
 functions for heatmap visualizations
