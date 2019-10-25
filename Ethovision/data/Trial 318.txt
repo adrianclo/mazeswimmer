@@ -1,5 +1,5 @@
 "Number of header lines:";"40";
-"Experiment";"Bagni_Cyfip1_2017_batch2";
+"Experiment";"2017_batch2";
 "System Independent Variable";
 "Trial name";"Trial   318";
 "Trial ID";"317";
@@ -16,7 +16,7 @@
 "Recording duration";"00:01:40";
 "Track";"Track filet0317a0000o0000_0001.trk";
 "Tracking source";"Basler GenICam [Basler acA1300-60]";
-"Video file";"D:\Bagni_Cyfip1_2017_batch2\Media Files\Trial   318.mpg";
+"Video file";"D:\2017_batch2\Media Files\Trial   318.mpg";
 "Video start time";"02/10/2017 11:42:25";
 "Trial status";"Acquired";
 "Acquisition status";"Acquired";
