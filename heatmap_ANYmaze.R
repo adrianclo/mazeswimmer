@@ -83,9 +83,14 @@ p2 = ggplot(all_coor, aes(x,y)) + theme_bw() +
 # plot collective static traces and heatmap with individual static traces
 # grid.arrange(arrangeGrob(p1, p2, ncol = 2), p1 + facet_wrap(~Subject, nrow = 4, ncol = 10), nrow = 2)
 
+# plot static collective heatmap
+p2
+setwd("..")
+ggsave("./probe2_static.png")
+
 # plot dynamic collective heatmap
-p2_anim = p2 + transition_time(Frame) + labs(title = "Heatmap: general distribution\nFrame: {frame_time}")
-anim_save("./animated_probe2.gif", p2_anim)
+p2_dyn = p2 + transition_time(Frame) + labs(title = "Heatmap: general distribution\nFrame: {frame_time}")
+anim_save("./probe2_dynamic.gif", p2_dyn)
 
 # plot dynamic collective heatmap; adjust frame rate
 # p3 = p2 + transition_time(Frame) + labs(title = "Frame: {frame_time}"); animate(p3, fps = 8) 
