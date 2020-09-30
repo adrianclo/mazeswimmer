@@ -4,7 +4,9 @@ Functions for heatmap visualizations for <a href = "https://www.anymaze.co.uk/in
 With the example data (for ANY-maze), you can create the following plots:
 
 <b>A static image</b>
+
 <img src = "./ANYmaze/probe2_static.png"></img>
 
 <b>A dynamic image</b>
+
 <img src = "./ANYmaze/probe2_dyn.gif"></img>
