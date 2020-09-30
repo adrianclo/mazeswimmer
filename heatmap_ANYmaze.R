@@ -45,7 +45,7 @@ for(ii in 1:length(files)) {
     all_coor %<>% bind_rows(temp)    
 }
 
-all_coor %<>% tbl_df()
+all_coor %<>% as_tibble()
 
 p1 = ggplot(all_coor, aes(x,y)) + theme_bw() +
     geom_point(color = "red", size = .2, alpha = .25) +
@@ -84,7 +84,8 @@ p2 = ggplot(all_coor, aes(x,y)) + theme_bw() +
 # grid.arrange(arrangeGrob(p1, p2, ncol = 2), p1 + facet_wrap(~Subject, nrow = 4, ncol = 10), nrow = 2)
 
 # plot dynamic collective heatmap
-p2 + transition_time(Frame) + labs(title = "Heatmap: general distribution\nFrame: {frame_time}")
+p2_anim = p2 + transition_time(Frame) + labs(title = "Heatmap: general distribution\nFrame: {frame_time}")
+anim_save("./animated_probe2.gif", p2_anim)
 
 # plot dynamic collective heatmap; adjust frame rate
 # p3 = p2 + transition_time(Frame) + labs(title = "Frame: {frame_time}"); animate(p3, fps = 8) 
